@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data-driven campaigns across multiple channels that reach your target audience and drive measurable results, from Miaoon.">
+    <title>Digital Marketing — Miaoon</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLElEQVR4nM2TzUrDQBSFv0kmTaA/oLXUllJSH8GVdde8kAsXvoOP0Bcqbty510AhrkTSZEJtcl2kaUsUBLvQA5fh3Lnn3pkzjAKEI2AdI/4fDXQ9obZrZYxt24iUTClFnudf6uU7oVJlphJTyx/uyWFcN5tyd3q648FsJheTiUx8X4IgkHq9AmToONz0+8RxjDWd8t7r0R6PcT2PKIo4HwxQSvEaRQyGQzJjmM/nRFFUepCL8JRlxFnGmTE0RiMajQbL5ZJVkvAShgB0u12eFwuUZeG47t6Dq3abe9/HdDo4WqPWa9ZpCq6La1t8mAylNdrzyIyhlSTchiEPaVo2ONGay1aLonSpjK1hUhQ7XsGSgsd4xdtms3+F30JX97BqU35CIYLA8Sf4+7/wCa39dSfKYDktAAAAAElFTkSuQmCC">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADYklEQVR4nO2VTUhcVxiGn3N/5s6MzqBGQ2ZiKyaRQipUGJLoplgw4iaBuHCTmoWLQF3URQu6SbKpzCponJW7ZjM00Y3ZhDRMf6AuXUZpGlukZqFNMxOHqZ3xnPt1MT8mTSkFESnMC4fDPX/fc8/73e8qQDhCWUcZvA5QB6gD1AH+M4AFOEqhDgFAccBSbNt2+SClMMbUxkTKx1bH/k1SbQrEVkocpcQCCVT6D6NRudPZKW2OI7Zti+s4YlmWKKXk9f3/1JRSYtu22LYtjuO8NW/9ncSIoEXwgVKlH/R9Pm1o4INQCGMMe1rj+z4iwvDwMOl0mmQyied5uK7L9PQ06XSakZERRARjDMYYtNZvvb0D+z7EXJfBSIS46/JDoUB/JMK9rS3+uH6dB+Ew3yeTDA0N0dvby+LiIrZtk0wmGR8fZ2xsjMnJSbTWdHV1MT8/z+zsLPl8nlAoREdHB1prUqkUSqmaRVYVAODdQIDPjh/nmOPwRSzGyUCAz1ta+O7ZM1qvXGHPGEZHR+np6WFmZoZEIsHKygqZTIa5uTkunD9PX18fqVSKTCbD8vIyAwMDTE1NkX35komJCRKJBCKCZVn7AFUFlOI3rVnM5Xjl+9zLZulobORUezvvxeOMXr1K99mzKOBUZye/v3hB15kz3Lp5kzuzsyzcv89X6TQzt29z68YNLpw7x4OlJcLBIF/evcuvGxvEY7Fa0tZuv2pB2LLoDgb5sVjktGPzS7HE6UCA1kuXiHoeG5ubNDQ0EHAcsrkcP6+vUyqV+PjaNdbW1vjm4UMA+i9e5P3ubhYWFtje3OSjwUG+ffyY3v5+Vp88YWd7u2aDqmaiDww1N3O5paWcOJEInutS1BqdyyHhMHahgIggnodlDMFIBJQi+/w5gaBH87FWpFRiR2uKhQLRaJRgOMzOzg4hrTHFIkv5PI/yeaoxndct+OTECS63tfFnqUQwFgPPK9+RLxCPw/o6GANNTVBJIly3POd5iG1jslmcd9qhtAe+D5YFSrH79CmhxkZObm3xaHW1FvMNC7pCIQabmtAioHU5SMUrMQblOOVnY8q9CAIo294HUqq8trKvvEahXAdHwde5V/y0u1v78g5cCQ+qNyywAEsdRsXfl18pblUd+Q38P37HdYA6QB3gMPUX419nzb9HZw8AAAAASUVORK5CYII=">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #E53935;
+            --primary-dark: #C62828;
+            --secondary: #161616;
+            --text: #F0F0F0;
+            --text-light: #A8A8A8;
+            --bg-light: #1a1a1a;
+            --bg-dark: #0f0f0f;
+            --border: #333333;
+            --accent: #1a1a1a;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: #0f0f0f;
+            overflow-x: hidden;
+        }
+
+        /* Scroll Progress Bar */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #E53935, #FF6B6B);
+            width: 0%;
+            z-index: 999;
+            box-shadow: 0 0 10px rgba(229, 57, 53, 0.8);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            background: rgba(10, 10, 10, 0.7);
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        header.scrolled {
+            background: rgba(10, 10, 10, 0.95);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            padding: 15px 40px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: #E53935;
+            letter-spacing: -1px;
+            font-family: 'Space Grotesk', sans-serif;
+            animation: logoGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes logoGlow {
+            0%, 100% { text-shadow: 0 0 10px rgba(229, 57, 53, 0.3); }
+            50% { text-shadow: 0 0 20px rgba(229, 57, 53, 0.6); }
+        }
+
+        nav {
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text);
+            font-size: 14px;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #E53935;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section - Carousel */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #E53935 0%, #C62828 100%);
+            margin-top: 70px;
+        }
+
+        .carousel-slides {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .carousel-slide.active {
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .carousel-slide:nth-child(1) {
+            background: linear-gradient(135deg, #E53935 0%, #C62828 100%);
+        }
+
+        .carousel-slide:nth-child(2) {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        }
+
+        .carousel-slide:nth-child(3) {
+            background: linear-gradient(135deg, #C62828 0%, #E53935 100%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M 80 0 L 0 0 0 80" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="1200" height="600" fill="url(%23grid)" /></svg>');
+            opacity: 0.5;
+            z-index: 0;
+            animation: gridFloat 20s linear infinite;
+        }
+
+        @keyframes gridFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(20px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            max-width: 800px;
+            animation: fadeInUp 1s ease-out;
+            transform: translateZ(0);
+        }
+
+        .hero-content h1 {
+            font-size: 80px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1;
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: -2px;
+            animation: textGlitch 2s ease-in-out;
+        }
+
+        @keyframes textGlitch {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(2px); }
+        }
+
+        .hero-content .subtitle {
+            font-size: 32px;
+            font-weight: 300;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            letter-spacing: 1px;
+            animation: slideInLeft 1.2s ease-out;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            line-height: 1.8;
+            animation: slideInRight 1.4s ease-out;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            z-index: 30;
+        }
+
+        .carousel-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .carousel-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        .carousel-dots {
+            display: flex;
+            gap: 8px;
+        }
+
+        .indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .indicator:hover {
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .indicator.active {
+            background: white;
+            transform: scale(1.3);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Expertise Section */
+        .expertise {
+            padding: 100px 0;
+            background: #141414;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .section-header h2 {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            font-family: 'Space Grotesk', sans-serif;
+            background: linear-gradient(135deg, #E53935, #C62828);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-header p {
+            font-size: 18px;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .expertise-card {
+            background: #1c1c1c;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #333333;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .expertise-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(229, 57, 53, 0.1), transparent);
+            transition: left 0.3s ease;
+        }
+
+        .expertise-card:hover::before {
+            left: 100%;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            border-color: #E53935;
+        }
+
+        .expertise-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #E53935;
+            font-weight: 700;
+        }
+
+        .expertise-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #141414, #0a0a0a);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .project-card {
+            position: relative;
+            height: 280px;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #1a1a1a;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 15px 40px rgba(229, 57, 53, 0.2);
+        }
+
+        .project-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(229, 57, 53, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-text {
+            color: white;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .project-text h3 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        /* Workflow Section */
+        .workflow {
+            padding: 100px 0;
+            background: #0f0f0f;
+            position: relative;
+        }
+
+        .workflow-timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .workflow-step {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        .workflow-step:nth-child(even) {
+            grid-template-columns: 1fr 1fr;
+            direction: rtl;
+        }
+
+        .workflow-step:nth-child(even) > div {
+            direction: ltr;
+        }
+
+        .workflow-content {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .workflow-number {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #E53935, #C62828);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .workflow-content h3 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .workflow-content p {
+            color: var(--text-light);
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .workflow-image {
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            animation: fadeInUp 1.2s ease-out;
+            background: #1a1a1a;
+        }
+
+        .workflow-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .workflow-step:hover .workflow-image img {
+            transform: scale(1.05);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #141414, #0a0a0a);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .testimonial-card {
+            background: #1a1a1a;
+            padding: 40px;
+            border-radius: 15px;
+            border-left: 4px solid #E53935;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            right: 10px;
+            font-size: 100px;
+            color: rgba(229, 57, 53, 0.1);
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(229, 57, 53, 0.25);
+        }
+
+        .testimonial-content p {
+            color: var(--text-light);
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #E53935, #C62828);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .author-info h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .author-info p {
+            font-size: 12px;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        .stars {
+            color: #E53935;
+            font-size: 14px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 100px 0;
+            background: #141414;
+        }
+
+        .pricing-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 60px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .toggle-switch {
+            display: flex;
+            background: #262626;
+            border-radius: 20px;
+            padding: 5px;
+            gap: 5px;
+        }
+
+        .toggle-option {
+            padding: 8px 20px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            color: var(--text-light);
+        }
+
+        .toggle-option.active {
+            background: #1a1a1a;
+            color: #E53935;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .pricing-card {
+            background: #1a1a1a;
+            border: 2px solid #333333;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #E53935, #C62828);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: left;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(229, 57, 53, 0.25);
+            border-color: #E53935;
+        }
+
+        .pricing-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .pricing-card h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #E53935;
+        }
+
+        .pricing-card .price {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #F5F5F5;
+        }
+
+        .pricing-card .price-period {
+            font-size: 16px;
+            color: var(--text-light);
+            font-weight: 400;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid #333333;
+            color: var(--text-light);
+            font-size: 14px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #E53935;
+            font-weight: 700;
+        }
+
+        .pricing-btn {
+            width: 100%;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #E53935, #C62828);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .pricing-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(229, 57, 53, 0.3);
+        }
+
+        /* CTA Section */
+        #cta {
+            padding: 100px 0;
+            background: linear-gradient(135deg, rgba(229, 57, 53, 0.9) 0%, rgba(198, 40, 40, 0.9) 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        #cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: float 20s linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            25% { transform: translate(25px, -25px); }
+            50% { transform: translate(0, -50px); }
+            75% { transform: translate(-25px, -25px); }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 10;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .cta-content h2 {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .cta-content p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 18px 50px;
+            background: white;
+            color: #E53935;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+        }
+
+        .social-links a:hover {
+            color: #E53935;
+            border-color: #E53935;
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #E53935;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            animation: fadeInUp 1.4s ease-out;
+        }
+
+        .footer-bottom p {
+            font-size: 14px;
+            color: #999;
+            margin: 5px 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Parallax Elements */
+        [data-parallax] {
+            will-change: transform;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 48px;
+            }
+
+            .hero-content .subtitle {
+                font-size: 24px;
+            }
+
+            .section-header h2 {
+                font-size: 36px;
+            }
+
+            .workflow-step {
+                grid-template-columns: 1fr;
+            }
+
+            .workflow-step:nth-child(even) {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                gap: 20px;
+            }
+
+            header {
+                padding: 15px 20px;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            .cta-content h2 {
+                font-size: 36px;
+            }
+        }
+
+        /* ===== Service Detail Page additions ===== */
+        .page-hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid #222;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(229, 57, 53, 0.15), transparent 70%);
+            z-index: 0;
+        }
+
+        .breadcrumb {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 30px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .breadcrumb a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: #E53935;
+        }
+
+        .breadcrumb span.sep {
+            opacity: 0.4;
+        }
+
+        .breadcrumb span.current {
+            color: #E53935;
+        }
+
+        .page-hero-eyebrow {
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+            padding: 6px 16px;
+            border: 1px solid #E53935;
+            border-radius: 50px;
+            color: #E53935;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .page-hero h1 {
+            position: relative;
+            z-index: 2;
+            font-size: 64px;
+            font-weight: 800;
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: -1.5px;
+            margin-bottom: 24px;
+            max-width: 800px;
+            animation: fadeInUp 1.1s ease-out;
+        }
+
+        .page-hero p.lead {
+            position: relative;
+            z-index: 2;
+            font-size: 19px;
+            color: var(--text-light);
+            max-width: 640px;
+            line-height: 1.8;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        /* Overview */
+        .overview {
+            padding: 100px 0;
+            background: #0f0f0f;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .overview-text h2 {
+            font-size: 36px;
+            font-weight: 800;
+            font-family: 'Space Grotesk', sans-serif;
+            margin-bottom: 24px;
+            color: var(--text);
+        }
+
+        .overview-text p {
+            color: var(--text-light);
+            font-size: 16px;
+            line-height: 1.9;
+            margin-bottom: 20px;
+        }
+
+        .stat-box {
+            background: #1c1c1c;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 30px;
+            display: grid;
+            gap: 24px;
+        }
+
+        .stat-item {
+            border-bottom: 1px solid #2a2a2a;
+            padding-bottom: 20px;
+        }
+
+        .stat-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .stat-item .stat-number {
+            font-size: 34px;
+            font-weight: 800;
+            font-family: 'Space Grotesk', sans-serif;
+            color: #E53935;
+            margin-bottom: 6px;
+        }
+
+        .stat-item .stat-label {
+            font-size: 13px;
+            color: var(--text-light);
+            letter-spacing: 0.5px;
+        }
+
+        /* Deliverables reuse .expertise-card, section reuses .expertise */
+
+        /* Process (compact workflow) */
+        .process-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #141414, #0a0a0a);
+        }
+
+        .process-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .process-row {
+            display: grid;
+            grid-template-columns: 90px 1fr;
+            gap: 30px;
+            padding: 35px 0;
+            border-bottom: 1px solid #262626;
+        }
+
+        .process-row:last-child {
+            border-bottom: none;
+        }
+
+        .process-row .process-num {
+            font-size: 40px;
+            font-weight: 800;
+            font-family: 'Space Grotesk', sans-serif;
+            color: #E53935;
+            opacity: 0.4;
+        }
+
+        .process-row h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        .process-row p {
+            color: var(--text-light);
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        /* Case study callout */
+        .case-callout {
+            padding: 100px 0;
+            background: #0f0f0f;
+        }
+
+        .case-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: #1c1c1c;
+            border: 1px solid #333;
+            border-radius: 20px;
+            overflow: hidden;
+            align-items: stretch;
+        }
+
+        .case-card-visual {
+            background: linear-gradient(135deg, #E53935, #C62828);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px;
+            min-height: 280px;
+        }
+
+        .case-card-visual span {
+            font-size: 42px;
+            font-weight: 800;
+            font-family: 'Space Grotesk', sans-serif;
+            color: white;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .case-card-body {
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .case-card-body .tag {
+            color: #E53935;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .case-card-body h3 {
+            font-size: 28px;
+            font-weight: 800;
+            font-family: 'Space Grotesk', sans-serif;
+            margin-bottom: 16px;
+        }
+
+        .case-card-body p {
+            color: var(--text-light);
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .case-card-body a {
+            color: #E53935;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: gap 0.3s ease;
+        }
+
+        .case-card-body a:hover {
+            gap: 14px;
+        }
+
+        @media (max-width: 900px) {
+            .overview-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .case-card {
+                grid-template-columns: 1fr;
+            }
+
+            .page-hero h1 {
+                font-size: 42px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .page-hero {
+                padding: 140px 0 70px;
+            }
+
+            .process-row {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+    </style>
+</head><body>
+    <div class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo"><a href="index.html" style="color:inherit;text-decoration:none;">Miaoon</a></div>
+        <nav>
+            <a href="index.html#expertise">Expertise</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#workflow">Workflow</a>
+            <a href="index.html#testimonials">Testimonials</a>
+            <a href="index.html#pricing">Partnerships</a>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="sep">/</span>
+                <a href="index.html#expertise">Expertise</a>
+                <span class="sep">/</span>
+                <span class="current">Digital Marketing</span>
+            </div>
+            <div class="page-hero-eyebrow">Expertise</div>
+            <h1>Digital Marketing</h1>
+            <p class="lead">Data-driven campaigns across multiple channels that reach your target audience effectively and drive measurable results.</p>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-text fade-in-up">
+                    <h2>Campaigns built around what your audience actually does</h2>
+                    <p>Channels change, but the fundamentals don't: know who you're talking to, put the right message in front of them at the right moment, and measure what actually moved the needle.</p>
+                    <p>We plan and run integrated campaigns across search, social, email, and display, using each channel for what it does best instead of spreading the same message everywhere and hoping something sticks.</p>
+                    <p>You get regular reporting tied to business outcomes, not vanity metrics, so you always know what's working and what's worth cutting.</p>
+                    
+                </div>
+                <div class="stat-box fade-in-up">
+                    <div class="stat-item">
+                        <div class="stat-number">12+</div>
+                        <div class="stat-label">CHANNELS MANAGED ACROSS CLIENTS</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">Monthly</div>
+                        <div class="stat-label">REPORTING CADENCE, NOT QUARTERLY SURPRISES</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">CAMPAIGNS TIED TO A MEASURABLE GOAL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="expertise" style="background:#141414;">
+        <div class="container">
+            <div class="section-header">
+                <h2>What's Included</h2>
+                <p>Data-driven campaigns across multiple channels that reach your target audience effectively and drive measurable results.</p>
+            </div>
+
+            <div class="expertise-grid">
+                <div class="expertise-card fade-in-up">
+                    <h3>Channel Strategy</h3>
+                    <p>A media plan that matches each channel to the stage of the funnel it actually performs well at.</p>
+                </div>
+
+                <div class="expertise-card fade-in-up">
+                    <h3>Search & Social Campaigns</h3>
+                    <p>Paid and organic campaigns across search and social platforms, built around your actual conversion goals.</p>
+                </div>
+
+                <div class="expertise-card fade-in-up">
+                    <h3>Email Marketing</h3>
+                    <p>Lifecycle and campaign email programs that nurture leads without burning out your list.</p>
+                </div>
+
+                <div class="expertise-card fade-in-up">
+                    <h3>Content Distribution</h3>
+                    <p>Getting your content in front of the right audience, not just publishing it and hoping for reach.</p>
+                </div>
+
+                <div class="expertise-card fade-in-up">
+                    <h3>Conversion Tracking</h3>
+                    <p>Proper attribution setup so you know which channels and campaigns are actually driving revenue.</p>
+                </div>
+
+                <div class="expertise-card fade-in-up">
+                    <h3>Monthly Reporting</h3>
+                    <p>Clear, jargon-free reporting on what happened, why, and what we're changing next.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Process</h2>
+                <p>A structured path from discovery to results you can measure</p>
+            </div>
+
+            <div class="process-list">
+                <div class="process-row fade-in-up">
+                    <div class="process-num">01</div>
+                    <div>
+                        <h3>Audience & Channel Audit</h3>
+                        <p>We map where your audience already spends time and audit any existing campaigns for what to keep, cut, or fix.</p>
+                    </div>
+                </div>
+
+                <div class="process-row fade-in-up">
+                    <div class="process-num">02</div>
+                    <div>
+                        <h3>Campaign Planning</h3>
+                        <p>A channel-by-channel plan with clear goals, budgets, and the messaging each platform needs to perform.</p>
+                    </div>
+                </div>
+
+                <div class="process-row fade-in-up">
+                    <div class="process-num">03</div>
+                    <div>
+                        <h3>Launch & Optimize</h3>
+                        <p>Campaigns go live with close monitoring in the first weeks, adjusting targeting and creative based on real performance.</p>
+                    </div>
+                </div>
+
+                <div class="process-row fade-in-up">
+                    <div class="process-num">04</div>
+                    <div>
+                        <h3>Report & Scale</h3>
+                        <p>Monthly reporting shows what worked, and budget shifts toward the channels and campaigns proving themselves out.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Callout -->
+    <section class="case-callout">
+        <div class="container">
+            <div class="case-card fade-in-up">
+                <div class="case-card-visual">
+                    <span>Meridian<br>Foods</span>
+                </div>
+                <div class="case-card-body">
+                    <div class="tag">Case Study</div>
+                    <h3>Meridian Foods — Digital Campaign</h3>
+                    <p>We ran an integrated digital campaign for Meridian Foods across search and social, turning a fragmented media spend into a coordinated push with clear, trackable results.</p>
+                    <a href="index.html#projects">View the project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" style="background: linear-gradient(135deg, rgba(229, 57, 53, 0.9) 0%, rgba(198, 40, 40, 0.9) 100%), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDYwMCI+PGRlZnM+PHBhdHRlcm4gaWQ9ImN0YXBhdHRlcm4iIHg9IjAiIHk9IjAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cmVjdCB4PSIyMCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIG9wYWNpdHk9IjAuMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0iI0U1MzkzNSIgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjAwIi8+PHJlY3QgZmlsbD0idXJsKCNjdGFwYXR0ZXJuKSIgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjAwIi8+PC9zdmc+') center/cover; background-blend-mode: overlay;">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready for Campaigns That Perform?</h2>
+                <p>Let's build a channel strategy tied to real business outcomes, not just impressions.</p>
+                <a href="mailto:hello@miaoon.in" class="cta-btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://twitter.com/miaoon" title="Twitter">𝕏</a>
+                <a href="https://linkedin.com/company/miaoon" title="LinkedIn">in</a>
+                <a href="https://instagram.com/miaoon" title="Instagram">📷</a>
+                <a href="https://facebook.com/miaoon" title="Facebook">f</a>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html#expertise">Services</a>
+                <a href="index.html#projects">Work</a>
+                <a href="index.html#workflow">Process</a>
+                <a href="index.html#testimonials">Testimonials</a>
+                <a href="index.html#pricing">Partnerships</a>
+                <a href="index.html#cta">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Miaoon. All rights reserved.</p>
+                <p style="margin-top: 10px;">Jamia Nagar, Delhi | hello@miaoon.in</p>
+                <p style="margin-top: 5px; font-size: 12px;">Digital Excellence Through Strategy, Creativity & Technology</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Progress Bar
+        const scrollProgress = document.querySelector('.scroll-progress');
+        window.addEventListener('scroll', () => {
+            const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            scrollProgress.style.width = scrollPercentage + '%';
+        });
+
+        // Header Scroll Effect
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for Fade In on Scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth Scroll for in-page anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

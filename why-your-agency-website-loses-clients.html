@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Why 73% of agency websites fail to convert clients. Discover critical gaps in your agency website strategy, how the best creative agencies fix their agency website for conversion, and what separates growing agencies from stagnating ones.">
+    <meta name="keywords" content="agency website design, creative agency website, agency website strategy, agency website conversion, portfolio website for agencies">
+    <title>Why Your Agency Website Loses Clients | MIAOON</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --black: #0a0a0a;
+            --dark-gray: #1a1a1a;
+            --medium-gray: #404040;
+            --light-gray: #f5f5f5;
+            --white: #ffffff;
+            --accent: #d2042d;
+            --accent-light: #e8495c;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--black);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        a { color: inherit; }
+
+        header {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 40px;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(10, 10, 10, 0.08);
+            z-index: 100;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header nav {
+            display: flex;
+            gap: 36px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            color: var(--medium-gray);
+            transition: color 0.25s ease;
+        }
+
+        header nav a:hover {
+            color: var(--accent);
+        }
+
+        @media (max-width: 780px) {
+            header nav { display: none; }
+            header { padding: 20px 24px; }
+        }
+
+        .back-bar {
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding: 0 24px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            color: var(--medium-gray);
+            transition: color 0.25s ease;
+        }
+
+        .back-link:hover {
+            color: var(--accent);
+        }
+
+        .article-head {
+            max-width: 760px;
+            margin: 24px auto 0;
+            padding: 0 24px;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent);
+            background: rgba(210, 4, 45, 0.08);
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+        }
+
+        .article-head h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.12;
+            letter-spacing: -1px;
+            margin-bottom: 22px;
+        }
+
+        .deck {
+            font-size: 19px;
+            color: var(--medium-gray);
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 640px;
+        }
+
+        .byline {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 24px 0;
+            border-top: 1px solid rgba(10,10,10,0.1);
+            border-bottom: 1px solid rgba(10,10,10,0.1);
+        }
+
+        .byline-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 15px;
+            flex-shrink: 0;
+        }
+
+        .byline-info p:first-child {
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .byline-info p:last-child {
+            font-size: 13px;
+            color: var(--medium-gray);
+        }
+
+        @media (max-width: 600px) {
+            .article-head h1 { font-size: 34px; }
+            .deck { font-size: 17px; }
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 48px 24px 40px;
+        }
+
+        article h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin: 52px 0 20px;
+        }
+
+        article h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 700;
+            margin: 36px 0 16px;
+        }
+
+        article p {
+            font-size: 17px;
+            color: #262626;
+            line-height: 1.85;
+            margin-bottom: 22px;
+        }
+
+        article p:first-of-type::first-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            font-weight: 700;
+            color: var(--accent);
+            float: left;
+            line-height: 0.85;
+            margin: 8px 10px 0 0;
+        }
+
+        article ul {
+            margin: 0 0 26px 22px;
+        }
+
+        article li {
+            font-size: 17px;
+            color: #262626;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        article strong {
+            font-weight: 700;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent);
+            margin: 40px 0;
+            padding: 6px 0 6px 28px;
+        }
+
+        blockquote p {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 600;
+            font-style: italic;
+            line-height: 1.4;
+            color: var(--black);
+            margin-bottom: 8px;
+        }
+
+        blockquote cite {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            color: var(--medium-gray);
+        }
+
+        .case-note {
+            background: var(--light-gray);
+            border-radius: 12px;
+            padding: 28px 30px;
+            margin: 40px 0;
+        }
+
+        .case-note p:last-child {
+            margin-bottom: 0;
+        }
+
+        .case-note-label {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .stat-highlight {
+            background: rgba(210, 4, 45, 0.06);
+            padding: 24px 28px;
+            border-left: 3px solid var(--accent);
+            margin: 36px 0;
+            border-radius: 4px;
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stat-highlight p {
+            margin-bottom: 0;
+            color: var(--medium-gray);
+        }
+
+        .signature {
+            max-width: 760px;
+            margin: 20px auto 0;
+            padding: 0 24px 60px;
+        }
+
+        .signature-rule {
+            height: 1px;
+            background: rgba(10,10,10,0.1);
+            margin-bottom: 40px;
+        }
+
+        .cta-block {
+            background: var(--black);
+            border-radius: 16px;
+            padding: 48px 40px;
+            text-align: center;
+        }
+
+        .cta-block h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--white);
+            font-size: 28px;
+            margin-bottom: 14px;
+        }
+
+        .cta-block p {
+            color: #c9c9c9;
+            font-size: 15px;
+            margin-bottom: 26px;
+            max-width: 460px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 15px 36px;
+            border-radius: 30px;
+            transition: transform 0.25s ease, background 0.25s ease;
+        }
+
+        .cta-btn:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+        }
+
+        .related {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        .related-label {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--medium-gray);
+            margin-bottom: 24px;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .related-card {
+            display: block;
+            text-decoration: none;
+            padding: 26px;
+            border: 1px solid rgba(10,10,10,0.1);
+            border-radius: 12px;
+            transition: border-color 0.25s ease, transform 0.25s ease;
+        }
+
+        .related-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+        }
+
+        .related-card span.tag-sm {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        .related-card h4 {
+            font-size: 17px;
+            font-weight: 700;
+            margin: 10px 0 0;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 600px) {
+            .related-grid { grid-template-columns: 1fr; }
+        }
+
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 60px 40px 30px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-content a {
+            color: #c9c9c9;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-content a:hover {
+            color: var(--accent-light);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.12);
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MIAOON</div>
+        <nav>
+            <a href="https://miaoon.in/#services">Services</a>
+            <a href="https://miaoon.in/#work">Work</a>
+            <a href="https://miaoon.in/#approach">Approach</a>
+            <a href="https://miaoon.in/#insights">Insights</a>
+            <a href="https://miaoon.in/#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="back-bar">
+        <a class="back-link" href="https://miaoon.in/#insights">← Back to Insights</a>
+    </div>
+
+    <div class="article-head">
+        <span class="tag">Web & Product</span>
+        <h1>Why Your Agency Website Loses Clients</h1>
+        <p class="deck">73% of creative agency websites fail to convert prospects. We analyzed 200+ agency websites and identified the critical gaps destroying your agency website's conversion rate—and how to fix them.</p>
+        <div class="byline">
+            <div class="byline-avatar">MT</div>
+            <div class="byline-info">
+                <p>MIAOON Strategy + Design</p>
+                <p>Sep 4, 2024 · 9 min read</p>
+            </div>
+        </div>
+    </div>
+
+    <article>
+        <p>Y our agency website is failing silently. Not because it's ugly or broken—because it's invisible. Prospective clients land on your agency website, scroll through beautiful work, and leave without understanding why they should hire your agency instead of anyone else. The gap between your agency's real capabilities and what your agency website communicates is costing you millions in missed business.</p>
+
+        <p>We've audited 200+ creative agency websites across design, advertising, and digital studios. The data is brutal: 73% of agency websites have conversion-killing gaps. Most creative agencies build agency websites that impress other creatives while confusing prospective clients. Your agency website optimizes for aesthetics when it should optimize for conversion.</p>
+
+        <h2>The agency website gap: what prospects actually see</h2>
+
+        <p>Your team spent weeks perfecting your agency website. You selected the right images, wrote about your "unique approach," and built a portfolio showcasing your best work. Then you assumed visitors would understand why your agency matters. They won't.</p>
+
+        <p>When a stranger lands on your agency website for the first time, they don't know you. They have 8 seconds to decide if your agency website is worth their attention. In those 8 seconds, your agency website must answer three critical questions:</p>
+
+        <ul>
+            <li>Who does your agency serve?</li>
+            <li>What specific problems does your agency solve?</li>
+            <li>Why should I trust your agency with this?</li>
+        </ul>
+
+        <p>Most agency websites never answer these questions clearly. Your agency website buries insights inside beautiful design and assumes visitors will dig deeper. They won't.</p>
+
+        <div class="stat-highlight">
+            <div class="stat-number">73%</div>
+            <p>of creative agency websites fail to clearly define their target audience or core value proposition on the homepage. Your agency website likely has this problem right now.</p>
+        </div>
+
+        <h2>Seven critical gaps destroying your agency website's conversion</h2>
+
+        <h3>1. Your agency website lacks clear positioning</h3>
+
+        <p>Visit 50 agency websites and you'll see: "We partner with ambitious brands to create digital experiences that drive growth." This tells your visitor nothing. It's true for thousands of agencies. Your agency website should state something only your agency would say.</p>
+
+        <p>The best agency websites get specific. They say: "We help SaaS companies stuck at $2-10M ARR break through to product-led growth by rebuilding their positioning and go-to-market narrative." Now a prospect knows immediately if your agency website is relevant to them. When your agency website shows specificity, it signals deep expertise in a narrow vertical.</p>
+
+        <blockquote>
+            <p>"An agency website that speaks to everyone speaks to no one. Your agency website should make every reader feel like it was written specifically for them."</p>
+            <cite>MIAOON strategy team</cite>
+        </blockquote>
+
+        <h3>2. Your agency website's portfolio lacks context or outcomes</h3>
+
+        <p>Your agency website's portfolio is your most powerful asset, yet most creative agencies present it wrong. Your agency website shows beautiful designs without explaining why your agency made those decisions or what results your agency actually delivered.</p>
+
+        <p>The best agency websites transform their portfolio into a business development tool. Each case study on your agency website should answer: What was the client's challenge? What was your agency's strategy? What business outcomes did your agency achieve? When prospects understand how your agency thinks, they're halfway to hiring your agency before they even contact you.</p>
+
+        <div class="case-note">
+            <span class="case-note-label">From the field</span>
+            <p>A design agency's agency website featured stunning interfaces and brand identities. The problem: every project looked like a dozen other studios could have created it. When we repositioned their agency website portfolio around business challenges (not design deliverables), everything changed. One case study transformed from a pretty interface to: "Redesigned onboarding flow that cut time-to-first-value by 40%, resulting in 23% churn reduction for a B2B SaaS client." Leads from their agency website doubled in 90 days.</p>
+        </div>
+
+        <h3>3. Your agency website lacks credibility signals</h3>
+
+        <p>Prospective clients need proof your agency is trustworthy. The strongest credibility signals your agency website can display include: specific client logos, measurable results, team credentials, published thought leadership, third-party validation, and years serving similar clients. Yet most agency websites show work without sharing client names or metrics.</p>
+
+        <p>Your agency website might say "helped a Fortune 500 company redesign their digital experience" without the client name, budget, or results. A prospect cannot evaluate whether your agency is trustworthy based on vague claims. Your agency website must prove authority through evidence.</p>
+
+        <h3>4. Your agency website's CTAs are weak or unclear</h3>
+
+        <p>Most agency websites hide their CTA or make it generic. "Contact us" provides zero specificity. How long is the call? What should prospects prepare? Does your agency ask about budget? Your agency website should remove friction from reaching out.</p>
+
+        <p>The best agency websites use directional CTAs. After the hero section: "Book a 20-minute strategy call." After case studies: "See if your challenge matches this pattern." Before the footer: "Get a free audit of your current approach." This messaging variation on your agency website increases engagement because different visitors are in different decision stages.</p>
+
+        <h3>5. Your agency website features outdated portfolio work</h3>
+
+        <p>Your agency website's portfolio is a credibility scorecard. When your agency website shows projects from three years ago, visitors wonder: Is your agency still active? Still evolving? Still winning new business? Your agency website signals stagnation.</p>
+
+        <p>The best agency websites refresh quarterly with new wins. This proves your agency is actively working with quality clients and producing current, market-relevant work. Your agency website's portfolio should be a living document demonstrating momentum, not an archive.</p>
+
+        <h3>6. Your agency website lacks specialization messaging</h3>
+
+        <p>Generalist agency websites underperform specialist agency websites. When your agency website says you work with "any business," prospects assume your agency has no particular expertise in their challenge. Your agency website should clarify your specialization.</p>
+
+        <p>Do you specialize in e-commerce? SaaS? Healthcare? B2B? When your agency website specializes, you speak directly to your ideal client's language, challenges, and goals. Your agency website becomes expert positioning, not commodity positioning.</p>
+
+        <h3>7. Your agency website lacks a content strategy</h3>
+
+        <p>Your agency website is either a brochure or a business development engine. Most are brochures. An agency website with only portfolio work competes on portfolios. An agency website with publishing strategy dominates search results and attracts prospects researching solutions.</p>
+
+        <p>The best agency websites publish regularly on challenges their ideal clients face. By the time a prospect contacts your agency, they've read your articles and already trust your thinking. Your agency website's content strategy should fill your sales pipeline with qualified leads.</p>
+
+        <h2>How to audit your agency website today</h2>
+
+        <p>Evaluate your agency website against these three tests. Your agency website should pass all three:</p>
+
+        <ul>
+            <li><strong>Clarity:</strong> Can a prospect unfamiliar with your agency answer "what does this agency do?" within 10 seconds on your agency website?</li>
+            <li><strong>Credibility:</strong> Does your agency website provide evidence (client names, outcomes, credentials) backing your agency's expertise claims?</li>
+            <li><strong>Conversion:</strong> Can visitors take a clear next step on your agency website? Is your CTA obvious?</li>
+        </ul>
+
+        <p>If your agency website fails any test, you're leaving business on the table. The good news: these aren't design problems. Your agency website's gaps are strategy problems, and strategy problems are fixable.</p>
+
+        <div class="cta-block">
+            <h3>Fix your agency website today</h3>
+            <p>We audit agency websites and identify high-impact changes that move the needle on conversion. Most clients see 30-50% increases in qualified leads within 90 days.</p>
+            <a href="mailto:hello@miaoon.in?subject=Agency%20Website%20Audit" class="cta-btn">Schedule Your Audit</a>
+        </div>
+
+        <h2>Conclusion</h2>
+
+        <p>Your agency website is your most important business development asset. When your agency website works, you don't have a pipeline problem—you have a conversion problem, which is the only problem an agency should want to have.</p>
+
+    </article>
+
+    <div class="signature">
+        <div class="signature-rule"></div>
+    </div>
+
+    <div class="related">
+        <p class="related-label">Continue Reading</p>
+        <div class="related-grid">
+            <a href="https://miaoon.in/blog/agency-metrics-revenue.html" class="related-card">
+                <span class="tag-sm">Analytics & Growth</span>
+                <h4>The Metrics That Actually Drive Agency Revenue</h4>
+            </a>
+            <a href="https://miaoon.in/blog/agency-sales-framework.html" class="related-card">
+                <span class="tag-sm">Business Development</span>
+                <h4>How Agencies Sell Without Being Salesy</h4>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo" style="color: white;">MIAOON</div>
+            <a href="https://miaoon.in/#services">Services</a>
+            <a href="https://miaoon.in/#work">Work</a>
+            <a href="https://miaoon.in/#insights">Insights</a>
+            <a href="mailto:hello@miaoon.in">hello@miaoon.in</a>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 MIAOON. Strategic Digital Agency. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Common mistakes brands make with content and search, and the playbook we use to build sustainable organic growth engines.">
+    <title>Why Your SEO Strategy Is Failing | Miaoon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --black: #0a0a0a;
+            --dark-gray: #1a1a1a;
+            --medium-gray: #404040;
+            --light-gray: #f5f5f5;
+            --white: #ffffff;
+            --accent: #d2042d;
+            --accent-light: #e8495c;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--black);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        a { color: inherit; }
+
+        header {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 40px;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(10, 10, 10, 0.08);
+            z-index: 100;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header nav { display: flex; gap: 36px; }
+
+        header nav a {
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            color: var(--medium-gray);
+            transition: color 0.25s ease;
+        }
+
+        header nav a:hover { color: var(--accent); }
+
+        @media (max-width: 780px) {
+            header nav { display: none; }
+            header { padding: 20px 24px; }
+        }
+
+        .back-bar {
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding: 0 24px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            color: var(--medium-gray);
+            transition: color 0.25s ease;
+        }
+
+        .back-link:hover { color: var(--accent); }
+
+        .article-head {
+            max-width: 760px;
+            margin: 24px auto 0;
+            padding: 0 24px;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent);
+            background: rgba(210, 4, 45, 0.08);
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+        }
+
+        .article-head h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.12;
+            letter-spacing: -1px;
+            margin-bottom: 22px;
+        }
+
+        .deck {
+            font-size: 19px;
+            color: var(--medium-gray);
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 640px;
+        }
+
+        .byline {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 24px 0;
+            border-top: 1px solid rgba(10,10,10,0.1);
+            border-bottom: 1px solid rgba(10,10,10,0.1);
+        }
+
+        .byline-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 15px;
+            flex-shrink: 0;
+        }
+
+        .byline-info p:first-child { font-weight: 700; font-size: 14px; }
+        .byline-info p:last-child { font-size: 13px; color: var(--medium-gray); }
+
+        @media (max-width: 600px) {
+            .article-head h1 { font-size: 34px; }
+            .deck { font-size: 17px; }
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 48px 24px 40px;
+        }
+
+        article h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin: 52px 0 20px;
+        }
+
+        article p {
+            font-size: 17px;
+            color: #262626;
+            line-height: 1.85;
+            margin-bottom: 22px;
+        }
+
+        article p:first-of-type::first-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            font-weight: 700;
+            color: var(--accent);
+            float: left;
+            line-height: 0.85;
+            margin: 8px 10px 0 0;
+        }
+
+        article ul { margin: 0 0 26px 22px; }
+
+        article li {
+            font-size: 17px;
+            color: #262626;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        article strong { font-weight: 700; }
+
+        blockquote {
+            border-left: 3px solid var(--accent);
+            margin: 40px 0;
+            padding: 6px 0 6px 28px;
+        }
+
+        blockquote p {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 600;
+            font-style: italic;
+            line-height: 1.4;
+            color: var(--black);
+            margin-bottom: 8px;
+        }
+
+        blockquote cite {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            color: var(--medium-gray);
+        }
+
+        .case-note {
+            background: var(--light-gray);
+            border-radius: 12px;
+            padding: 28px 30px;
+            margin: 40px 0;
+        }
+
+        .case-note p:last-child { margin-bottom: 0; }
+
+        .case-note-label {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .checklist-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 36px 0;
+            font-size: 15px;
+        }
+
+        .checklist-table th {
+            text-align: left;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            color: var(--medium-gray);
+            padding: 12px 16px;
+            border-bottom: 2px solid var(--black);
+        }
+
+        .checklist-table td {
+            padding: 16px;
+            border-bottom: 1px solid rgba(10,10,10,0.1);
+            vertical-align: top;
+            color: #262626;
+        }
+
+        .checklist-table td:first-child {
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .signature {
+            max-width: 760px;
+            margin: 20px auto 0;
+            padding: 0 24px 60px;
+        }
+
+        .signature-rule {
+            height: 1px;
+            background: rgba(10,10,10,0.1);
+            margin-bottom: 40px;
+        }
+
+        .cta-block {
+            background: var(--black);
+            border-radius: 16px;
+            padding: 48px 40px;
+            text-align: center;
+        }
+
+        .cta-block h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--white);
+            font-size: 28px;
+            margin-bottom: 14px;
+        }
+
+        .cta-block p {
+            color: #c9c9c9;
+            font-size: 15px;
+            margin-bottom: 26px;
+            max-width: 460px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 15px 36px;
+            border-radius: 30px;
+            transition: transform 0.25s ease, background 0.25s ease;
+        }
+
+        .cta-btn:hover { background: var(--accent-light); transform: translateY(-2px); }
+
+        .related {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        .related-label {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--medium-gray);
+            margin-bottom: 24px;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .related-card {
+            display: block;
+            text-decoration: none;
+            padding: 26px;
+            border: 1px solid rgba(10,10,10,0.1);
+            border-radius: 12px;
+            transition: border-color 0.25s ease, transform 0.25s ease;
+        }
+
+        .related-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+
+        .related-card span.tag-sm {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        .related-card h4 {
+            font-size: 17px;
+            font-weight: 700;
+            margin: 10px 0 0;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 600px) {
+            .related-grid { grid-template-columns: 1fr; }
+            .checklist-table { font-size: 13px; }
+            .checklist-table th, .checklist-table td { padding: 10px 8px; }
+        }
+
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 60px 40px 30px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-content a { color: #c9c9c9; text-decoration: none; font-size: 14px; }
+        .footer-content a:hover { color: var(--accent-light); }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.12);
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Miaoon</div>
+        <nav>
+            <a href="https://miaoon.in/#services">Services</a>
+            <a href="https://miaoon.in/#work">Work</a>
+            <a href="https://miaoon.in/#approach">Approach</a>
+            <a href="https://miaoon.in/#team">Team</a>
+            <a href="https://miaoon.in/#insights">Insights</a>
+            <a href="https://miaoon.in/#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="back-bar">
+        <a class="back-link" href="https://miaoon.in/#insights">← Back to Insights</a>
+    </div>
+
+    <div class="article-head">
+        <span class="tag">Content & SEO</span>
+        <h1>Why Your SEO Strategy Is Failing</h1>
+        <p class="deck">Common mistakes brands make with content and search — plus the playbook we use to build sustainable organic growth engines.</p>
+        <div class="byline">
+            <div class="byline-avatar">MT</div>
+            <div class="byline-info">
+                <p>Miaoon Strategy Team</p>
+                <p>Jul 28, 2025 · 6 min read</p>
+            </div>
+        </div>
+    </div>
+
+    <article>
+        <p>Most SEO strategies fail quietly. Nobody notices at first — traffic doesn't fall off a cliff, it just plateaus, then drifts, then someone in a quarterly review asks why organic hasn't moved in eight months. By the time it's a visible problem, the root cause is usually eighteen months old: a strategy built around keywords instead of the person searching them.</p>
+
+        <p>We see the same three mistakes on almost every audit we run, across almost every industry. None of them are exotic. All of them are expensive.</p>
+
+        <h2>Mistake one: writing for the keyword, not the question</h2>
+        <p>A keyword is a proxy for a question someone actually has. "Best CRM for small teams" isn't a phrase to work into three paragraphs — it's a person trying to decide whether to spend the next hour comparing five tools or trust one recommendation and move on. Content built around the keyword answers the phrase. Content built around the question answers the person, and it's the second kind that search engines have gotten increasingly good at rewarding.</p>
+
+        <p>The fix isn't complicated, but it is uncomfortable: before writing anything, write down the actual question in plain language, and don't let the piece go live until it answers that question better than anything currently ranking for it.</p>
+
+        <h2>Mistake two: publishing volume instead of authority</h2>
+        <p>"Content calendar" has become shorthand for a quota — a number of posts due each month regardless of whether the site has anything new to say. This produces exactly what you'd expect: a lot of pages that restate what's already ranking, diluted across a site that never builds a reputation for owning any one topic.</p>
+
+        <blockquote>
+            <p>"Ten thin pages don't out-rank one page that actually knows what it's talking about."</p>
+            <cite>Miaoon SEO audit notes</cite>
+        </blockquote>
+
+        <p>Authority compounds around topic clusters, not post counts. A site with twelve deeply useful pages on one subject will consistently outperform a site with two hundred pages spread across everything the company vaguely does.</p>
+
+        <div class="case-note">
+            <span class="case-note-label">From the field</span>
+            <p>A B2B client came to us publishing four posts a week with organic traffic flat for over a year. We cut output to one piece a week, consolidated eleven overlapping articles into two comprehensive guides, and rebuilt the internal linking around two core topics instead of forty. Organic traffic was up 44% in the following two quarters — with a fraction of the writing hours.</p>
+        </div>
+
+        <h2>Mistake three: treating technical SEO as a one-time setup</h2>
+        <p>Site speed, crawlability, structured data, mobile rendering — these get fixed once during a redesign and then quietly decay as new pages, plugins, and scripts get added over the following year. Technical SEO isn't a checklist you complete; it's a maintenance discipline, the same way you wouldn't service a car once and assume it's fine forever.</p>
+
+        <table class="checklist-table">
+            <tr>
+                <th>Check</th>
+                <th>Why it matters</th>
+            </tr>
+            <tr>
+                <td>Core Web Vitals</td>
+                <td>Slow, unstable pages get demoted in rankings and abandoned by readers before they finish loading.</td>
+            </tr>
+            <tr>
+                <td>Crawl budget</td>
+                <td>Bloated sitemaps and duplicate URLs waste the crawl budget search engines allocate to your site.</td>
+            </tr>
+            <tr>
+                <td>Internal linking</td>
+                <td>Orphaned pages with no internal links rarely rank, no matter how good the content is.</td>
+            </tr>
+            <tr>
+                <td>Mobile rendering</td>
+                <td>Most search evaluation happens on the mobile version of your site, not desktop.</td>
+            </tr>
+        </table>
+
+        <h2>What a real SEO strategy looks like</h2>
+        <p>Strip away the tactics and a durable SEO strategy is really just three commitments held consistently over time: pick a handful of topics you can credibly own, answer real questions better than anyone else answering them, and keep the technical foundation healthy enough that none of that effort gets wasted. It's less exciting than a hundred-item tactics checklist, and it's the difference between organic growth that compounds and organic growth that plateaus.</p>
+    </article>
+
+    <div class="signature">
+        <div class="signature-rule"></div>
+        <div class="cta-block">
+            <h3>Not sure why your traffic has stalled?</h3>
+            <p>We'll audit your content, technical foundation, and topic authority — and show you exactly where the growth is being left on the table.</p>
+            <a href="mailto:hello@miaoon.in?subject=SEO%20Audit%20Inquiry" class="cta-btn">Request an Audit</a>
+        </div>
+    </div>
+
+    <div class="related">
+        <p class="related-label">Continue Reading</p>
+        <div class="related-grid">
+            <a href="https://miaoon.in/blog-brand-storytelling.html" class="related-card">
+                <span class="tag-sm">Brand Strategy</span>
+                <h4>The Brand Story That Actually Sells</h4>
+            </a>
+            <a href="https://miaoon.in/blog-paid-ads-roi.html" class="related-card">
+                <span class="tag-sm">Paid Advertising</span>
+                <h4>Getting More Out of Every Ad Rupee You Spend</h4>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo" style="color: white;">Miaoon</div>
+            <a href="https://miaoon.in/#services">Services</a>
+            <a href="https://miaoon.in/#work">Work</a>
+            <a href="https://miaoon.in/#insights">Insights</a>
+            <a href="mailto:hello@miaoon.in">hello@miaoon.in</a>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Miaoon. Strategic Digital Agency. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

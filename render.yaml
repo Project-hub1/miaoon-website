@@ -1,0 +1,16 @@
+services:
+  - type: web
+    runtime: static
+    name: miaoon
+    buildCommand: ""
+    staticPublishPath: .
+    routes:
+      - type: redirect
+        source: /default.php
+        destination: /
+      - type: redirect
+        source: /blog/index.php
+        destination: /blog/
+      - type: redirect
+        source: /blog/posts/post-1.php
+        destination: /blog/posts/post-1.html

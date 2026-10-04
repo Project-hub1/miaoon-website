@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nordwind Apparel — Case Study | Miaoon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --primary:#E53935; --primary-dark:#C62828; --text:#F0F0F0; --text-light:#A8A8A8;
+  --bg:#0f0f0f; --card:#1a1a1a; --border:#333;
+}
+body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+a { color:inherit; }
+header {
+  position:fixed; top:0; left:0; right:0; padding:20px 40px;
+  display:flex; justify-content:space-between; align-items:center;
+  backdrop-filter:blur(10px); background:rgba(10,10,10,0.85);
+  border-bottom:1px solid rgba(255,255,255,0.08); z-index:100;
+}
+.logo { font-size:26px; font-weight:800; color:var(--primary); font-family:'Space Grotesk',sans-serif; }
+.back-link { text-decoration:none; color:var(--text); font-size:14px; font-weight:500; border:1px solid var(--border); padding:8px 18px; border-radius:30px; transition:.3s; }
+.back-link:hover { border-color:var(--primary); color:var(--primary); }
+
+.hero {
+  margin-top:70px; padding:120px 40px 100px; text-align:center;
+  background:linear-gradient(135deg, #C62828 0%, #FF6B6B 100%); position:relative; overflow:hidden;
+}
+.hero::before {
+  content:''; position:absolute; inset:0;
+  background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="g" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M 80 0 L 0 0 0 80" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/></pattern></defs><rect width="1200" height="600" fill="url(%23g)"/></svg>');
+  opacity:.6;
+}
+.hero-inner { position:relative; z-index:2; max-width:800px; margin:0 auto; }
+.hero-tag { display:inline-block; padding:6px 18px; background:rgba(255,255,255,0.15); border-radius:30px; font-size:13px; font-weight:600; letter-spacing:1px; text-transform:uppercase; margin-bottom:24px; }
+.hero h1 { font-size:64px; font-weight:800; font-family:'Space Grotesk',sans-serif; letter-spacing:-1.5px; margin-bottom:20px; color:white; }
+.hero p { font-size:19px; color:rgba(255,255,255,0.92); max-width:600px; margin:0 auto; }
+
+.container { max-width:1000px; margin:0 auto; padding:0 40px; }
+
+.stats { display:grid; grid-template-columns:repeat(3,1fr); gap:30px; padding:70px 0; }
+.stat { text-align:center; }
+.stat .num { font-size:44px; font-weight:800; color:var(--primary); font-family:'Space Grotesk',sans-serif; }
+.stat .label { color:var(--text-light); font-size:14px; margin-top:8px; }
+
+section.block { padding:60px 0; border-top:1px solid var(--border); }
+section.block h2 { font-size:32px; font-weight:700; margin-bottom:20px; font-family:'Space Grotesk',sans-serif; }
+section.block p { color:var(--text-light); font-size:16px; margin-bottom:16px; max-width:750px; }
+
+.approach-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:24px; margin-top:30px; }
+.approach-card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:28px; transition:.3s; }
+.approach-card:hover { border-color:var(--primary); transform:translateY(-5px); }
+.approach-card h3 { font-size:18px; color:var(--primary); margin-bottom:10px; }
+.approach-card p { font-size:14px; margin:0; }
+
+.quote-block { background:var(--card); border-left:4px solid var(--primary); border-radius:14px; padding:36px; margin:40px 0; }
+.quote-block p { font-style:italic; font-size:17px; color:var(--text); margin-bottom:14px; }
+.quote-author { font-size:14px; color:var(--text-light); font-weight:600; }
+
+.cta { padding:90px 40px; text-align:center; background:linear-gradient(135deg, rgba(229,57,53,0.9), rgba(198,40,40,0.9)); margin-top:40px; }
+.cta h2 { font-size:38px; font-weight:800; font-family:'Space Grotesk',sans-serif; margin-bottom:16px; color:white; }
+.cta a { display:inline-block; margin-top:20px; padding:16px 44px; background:white; color:var(--primary); text-decoration:none; border-radius:50px; font-weight:700; transition:.3s; }
+.cta a:hover { transform:translateY(-3px); box-shadow:0 15px 30px rgba(0,0,0,0.3); }
+
+footer { text-align:center; padding:40px; color:#999; font-size:13px; border-top:1px solid var(--border); }
+
+@media (max-width:768px) {
+  .hero h1 { font-size:40px; }
+  .stats { grid-template-columns:1fr; }
+  header { padding:15px 20px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Miaoon</div>
+  <a href="https://miaoon.in/#projects" class="back-link">← Back to Work</a>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Web Design</div>
+    <h1>Nordwind Apparel</h1>
+    <p>A high-performance e-commerce experience built for an outdoor-lifestyle audience.</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="stats">
+    <div class="stat"><div class="num">67%</div><div class="label">Conversion Rate Lift</div></div>
+    <div class="stat"><div class="num">2.1s</div><div class="label">Avg. Page Load Time</div></div>
+    <div class="stat"><div class="num">41%</div><div class="label">Increase in AOV</div></div>
+  </div>
+
+  <section class="block">
+    <h2>The Challenge</h2>
+    <p>Nordwind's old website was slow, difficult to navigate on mobile, and failed to reflect the adventurous spirit of the brand — resulting in high cart abandonment.</p>
+  </section>
+
+  <section class="block">
+    <h2>Our Approach</h2>
+    <p>We designed and built a new storefront from scratch, prioritizing speed, mobile-first navigation, and immersive visual storytelling.</p>
+    <div class="approach-grid">
+      <div class="approach-card"><h3>UX Redesign</h3><p>Simplified navigation and checkout flow to reduce friction and drop-off.</p></div>
+      <div class="approach-card"><h3>Performance</h3><p>Rebuilt on a modern stack for sub-3-second load times across devices.</p></div>
+      <div class="approach-card"><h3>Visual Storytelling</h3><p>Full-bleed imagery and video to capture the outdoor lifestyle brand feel.</p></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>The Results</h2>
+    <p>The new site launched with dramatically improved load times and a substantial jump in conversion rate, along with a healthy increase in average order value.</p>
+    <div class="quote-block">
+      <p>"Professional, creative, and results-driven. Miaoon's team understood our vision and delivered exceptional work that truly elevated our brand."</p>
+      <div class="quote-author">Rajesh Patel, Director, Nordwind Apparel</div>
+    </div>
+  </section>
+</div>
+
+<section class="cta">
+  <h2>Want results like this?</h2>
+  <a href="mailto:hello@miaoon.in">Start Your Project</a>
+</section>
+
+<footer>&copy; 2025 Miaoon. All rights reserved.</footer>
+</body>
+</html>

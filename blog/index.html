@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MIAOON Blog</title>
+    <link rel="stylesheet" href="css/blog-style.css">
+</head>
+<body>
+    <header>
+        <h1>MIAOON Blog</h1>
+        <p>Insights & Tips from Our Team</p>
+        <a href="/">← Back Home</a>
+    </header>
+    
+    <main>
+        <div class="posts-grid">
+                <article class="post-card">
+                    <h2><a href="posts/post-1.html">Your First Blog Post</a></h2>
+                    <p class="meta">August 26, 2026 | Tips</p>
+                    <p>A brief summary of the post...</p>
+                    <a href="posts/post-1.html" class="read-more">Read More →</a>
+                </article>
+            <?php foreach($posts as $post): ?>
+            <?php endforeach; ?>
+        </div>
+    </main>
+</body>
+</html>
