@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://www.miaoon.in/blog-brand-storytelling.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how smart brands measure paid advertising ROI using conversions, ROAS, acquisition costs, profit margins, and meaningful business outcomes.">
+    <title>Paid Advertising ROI: How Smart Brands Measure What Actually Matters | Miaoon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./blog sample_files/css2" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --black: #0a0a0a;
+            --dark-gray: #1a1a1a;
+            --medium-gray: #404040;
+            --light-gray: #f5f5f5;
+            --white: #ffffff;
+            --accent: #d2042d;
+            --accent-light: #e8495c;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--black);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        a { color: inherit; }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 40px;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(10, 10, 10, 0.08);
+            z-index: 100;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header nav {
+            display: flex;
+            gap: 36px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            color: var(--medium-gray);
+            transition: color 0.25s ease;
+        }
+
+        header nav a:hover {
+            color: var(--accent);
+        }
+
+        @media (max-width: 780px) {
+            header nav { display: none; }
+            header { padding: 20px 24px; }
+        }
+
+        /* Breadcrumb / back link */
+        .back-bar {
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding: 0 24px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            color: var(--medium-gray);
+            transition: color 0.25s ease;
+        }
+
+        .back-link:hover {
+            color: var(--accent);
+        }
+
+        /* Article header */
+        .article-head {
+            max-width: 760px;
+            margin: 24px auto 0;
+            padding: 0 24px;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent);
+            background: rgba(210, 4, 45, 0.08);
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+        }
+
+        .article-head h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.12;
+            letter-spacing: -1px;
+            margin-bottom: 22px;
+        }
+
+        .deck {
+            font-size: 19px;
+            color: var(--medium-gray);
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 640px;
+        }
+
+        .byline {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 24px 0;
+            border-top: 1px solid rgba(10,10,10,0.1);
+            border-bottom: 1px solid rgba(10,10,10,0.1);
+        }
+
+        .byline-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 15px;
+            flex-shrink: 0;
+        }
+
+        .byline-info p:first-child {
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .byline-info p:last-child {
+            font-size: 13px;
+            color: var(--medium-gray);
+        }
+
+        @media (max-width: 600px) {
+            .article-head h1 { font-size: 34px; }
+            .deck { font-size: 17px; }
+        }
+
+        /* Article body */
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 48px 24px 40px;
+        }
+
+        article h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin: 52px 0 20px;
+        }
+
+        article p {
+            font-size: 17px;
+            color: #262626;
+            line-height: 1.85;
+            margin-bottom: 22px;
+        }
+
+        article p:first-of-type::first-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            font-weight: 700;
+            color: var(--accent);
+            float: left;
+            line-height: 0.85;
+            margin: 8px 10px 0 0;
+        }
+
+        article ul {
+            margin: 0 0 26px 22px;
+        }
+
+        article li {
+            font-size: 17px;
+            color: #262626;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        article strong {
+            font-weight: 700;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent);
+            margin: 40px 0;
+            padding: 6px 0 6px 28px;
+        }
+
+        blockquote p {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 600;
+            font-style: italic;
+            line-height: 1.4;
+            color: var(--black);
+            margin-bottom: 8px;
+        }
+
+        blockquote cite {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            color: var(--medium-gray);
+        }
+
+        .case-note {
+            background: var(--light-gray);
+            border-radius: 12px;
+            padding: 28px 30px;
+            margin: 40px 0;
+        }
+
+        .case-note p:last-child {
+            margin-bottom: 0;
+        }
+
+        .case-note-label {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Author CTA / signature block */
+        .signature {
+            max-width: 760px;
+            margin: 20px auto 0;
+            padding: 0 24px 60px;
+        }
+
+        .signature-rule {
+            height: 1px;
+            background: rgba(10,10,10,0.1);
+            margin-bottom: 40px;
+        }
+
+        .cta-block {
+            background: var(--black);
+            border-radius: 16px;
+            padding: 48px 40px;
+            text-align: center;
+        }
+
+        .cta-block h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--white);
+            font-size: 28px;
+            margin-bottom: 14px;
+        }
+
+        .cta-block p {
+            color: #c9c9c9;
+            font-size: 15px;
+            margin-bottom: 26px;
+            max-width: 460px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 15px 36px;
+            border-radius: 30px;
+            transition: transform 0.25s ease, background 0.25s ease;
+        }
+
+        .cta-btn:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+        }
+
+        /* Related posts */
+        .related {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        .related-label {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--medium-gray);
+            margin-bottom: 24px;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .related-card {
+            display: block;
+            text-decoration: none;
+            padding: 26px;
+            border: 1px solid rgba(10,10,10,0.1);
+            border-radius: 12px;
+            transition: border-color 0.25s ease, transform 0.25s ease;
+        }
+
+        .related-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+        }
+
+        .related-card span.tag-sm {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        .related-card h4 {
+            font-size: 17px;
+            font-weight: 700;
+            margin: 10px 0 0;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 600px) {
+            .related-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Footer */
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 60px 40px 30px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-content a {
+            color: #c9c9c9;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-content a:hover {
+            color: var(--accent-light);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.12);
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+
+        .summary-card { background: #f5f5f5; border-left: 4px solid #d2042d; padding: 24px 28px; margin: 24px 0 36px; border-radius: 0 10px 10px 0; }
+        .summary-card h2 { margin-top: 0; }
+        .formula { background: #f8f8f8; padding: 14px 18px; border-radius: 8px; border: 1px solid #e8e8e8; overflow-wrap: anywhere; }
+        .table-wrap { overflow-x: auto; margin: 24px 0 32px; }
+        table { width: 100%; border-collapse: collapse; min-width: 560px; font-size: 15px; }
+        th { background: #0a0a0a; color: #fff; text-align: left; padding: 14px; }
+        td { border-bottom: 1px solid #e5e5e5; padding: 13px 14px; }
+        tr:nth-child(even) td { background: #fafafa; }
+        .faq-question { margin-top: 22px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Miaoon</div>
+        <nav>
+            <a href="https://miaoon.in/#services">Services</a>
+            <a href="https://miaoon.in/#work">Work</a>
+            <a href="https://miaoon.in/#approach">Approach</a>
+            <a href="https://miaoon.in/#team">Team</a>
+            <a href="https://miaoon.in/#insights">Insights</a>
+            <a href="https://miaoon.in/#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="back-bar">
+        <a class="back-link" href="https://miaoon.in/#insights">← Back to Insights</a>
+    </div>
+
+    <!-- Article Header -->
+    <div class="article-head">
+        <span class="tag">Paid Advertising</span>
+        <h1>Paid Advertising ROI: How Smart Brands Measure What Actually Matters</h1>
+        <p class="deck">A practical guide to measuring campaign profitability, understanding ROI versus ROAS, and making every advertising rupee work harder.</p>
+        <div class="byline">
+            <div class="byline-avatar">MT</div>
+            <div class="byline-info">
+                <p>Miaoon Strategy Team</p>
+                <p>Oct 14, 2026 · 7 min read</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article Body -->
+    <article>
+<div class="summary-card"><h2>At a Glance</h2>
+<p>Paid advertising ROI helps businesses understand whether their campaigns are generating profitable results.</p>
+<p>Tracking conversions, revenue, and customer acquisition costs gives a clearer picture of campaign performance.</p>
+<p>Smart brands look beyond clicks and impressions to measure the real business impact of their ads.</p>
+<p>With accurate tracking and regular optimization, businesses can make better advertising decisions and use their budgets wisely.</p></div>
+<h2>Introduction</h2>
+<p>Paid advertising helps businesses reach potential customers through search engines and social media platforms. However, getting clicks and impressions does not always mean a campaign is successful. The real question is whether the money spent on advertising is bringing valuable results.</p>
+<p>Paid advertising ROI helps businesses measure campaign performance, identify wasted spending, and understand which strategies are contributing to business growth.</p>
+<h2>What Is Paid Advertising ROI?</h2>
+<p>Paid advertising ROI measures the return generated from an advertising investment compared with its cost. It helps businesses understand whether their campaigns are financially worthwhile.</p>
+<div class="formula-box"><strong>ROI formula</strong><p>ROI = (Revenue − Total Cost) ÷ Total Cost × 100</p></div>
+<p>For example, if a business spends ₹20,000 on advertising and generates ₹50,000 in revenue, its ROI is 150% when only advertising spend is considered.</p>
+<p>For a more accurate calculation, businesses should also account for relevant expenses such as product costs, campaign management fees, and shipping.</p>
+<h2>Which Metrics Actually Matter?</h2>
+<p>Clicks and impressions show how people interact with advertisements, but they do not tell the complete story. Businesses should also track metrics that connect advertising activity with real outcomes.</p>
+<table><thead><tr><th>Metric</th><th>What It Measures</th></tr></thead><tbody>
+<tr><td>Return on ad spend (ROAS)</td><td>Revenue generated for every rupee spent on ads</td></tr>
+<tr><td>Conversion rate</td><td>Percentage of visitors who complete a desired action</td></tr>
+<tr><td>Cost per acquisition (CPA)</td><td>Advertising cost per conversion or acquired customer</td></tr>
+<tr><td>Customer acquisition cost (CAC)</td><td>Overall cost of acquiring a new customer</td></tr>
+<tr><td>Customer lifetime value (CLV)</td><td>Estimated value a customer brings over time</td></tr>
+<tr><td>Profit margin</td><td>Revenue remaining after relevant costs</td></tr></tbody></table>
+<p>Businesses can use Google Ads conversion tracking to measure purchases, form submissions, phone calls, and other valuable actions.</p>
+<h2>ROI vs. ROAS: What's the Difference?</h2>
+<p>ROI and ROAS are related, but they measure different things.</p>
+<ul><li><strong>ROI</strong> measures the return relative to the costs included in the calculation.</li><li><strong>ROAS</strong> measures the revenue generated for each unit of advertising spend.</li></ul>
+<p>For example, if a business spends ₹10,000 on ads and generates ₹40,000 in revenue, its ROAS is 4x. However, the campaign may not be profitable after accounting for product costs, shipping, salaries, and other expenses.</p>
+<p>This is why businesses should track both metrics instead of relying on ROAS alone.</p>
+<h2>How to Measure Paid Advertising ROI Effectively</h2>
+<h3>1. Set Clear Campaign Goals</h3><p>Decide what success means before launching a campaign. An online store may focus on purchases, while a service business may measure qualified leads or booked consultations.</p>
+<h3>2. Set Up Conversion Tracking</h3><p>Track actions that matter to your business, such as purchases, registrations, and lead submissions. Google Analytics can help businesses understand user activity and how different marketing channels contribute to conversions.</p>
+<h3>3. Compare Spending With Results</h3><p>Review how much money each campaign spends and what it generates. For lead generation, look beyond the number of enquiries and measure how many leads become paying customers.</p>
+<h3>4. Optimize Campaign Performance</h3><p>Identify which ads, keywords, audiences, and landing pages perform well. Test improvements and adjust budgets using reliable performance data.</p>
+<h2>A Practical Example of Paid Advertising ROI</h2>
+<p>Consider an online store running a paid advertising campaign. The following figures are hypothetical and demonstrate how additional costs affect ROI.</p>
+<table><thead><tr><th>Campaign Detail</th><th>Amount</th></tr></thead><tbody>
+<tr><td>Advertising spend</td><td>₹25,000</td></tr><tr><td>Revenue generated</td><td>₹75,000</td></tr><tr><td>Other included business costs</td><td>₹20,000</td></tr><tr><td>Total included costs</td><td>₹45,000</td></tr><tr><td>Return after included costs</td><td>₹30,000</td></tr><tr><td><strong>ROI</strong></td><td><strong>66.7%</strong></td></tr></tbody></table>
+<p>In this example, the business generates ₹30,000 after subtracting the listed costs from revenue. Its ROI is approximately 66.7%.</p>
+<p>This shows why measuring only advertising spend can give an incomplete picture of campaign profitability.</p>
+<h2>Common Mistakes to Avoid</h2>
+<ul><li><strong>Focusing only on clicks:</strong> More traffic does not automatically mean more customers.</li><li><strong>Ignoring additional costs:</strong> Product expenses and campaign management fees can reduce profits.</li><li><strong>Using inaccurate tracking:</strong> Missing or duplicated conversions can lead to incorrect decisions.</li><li><strong>Ignoring lead quality:</strong> A large number of enquiries may not produce actual sales.</li><li><strong>Making decisions too early:</strong> Campaigns need sufficient data for a fair evaluation.</li></ul>
+<h2>FAQs</h2>
+<h3>1. What is a good ROI for paid advertising?</h3><p>A good ROI depends on profit margins, operating costs, customer value, and business goals. There is no single benchmark for every business.</p>
+<h3>2. How is paid advertising ROI calculated?</h3><p>Subtract the relevant costs from revenue, divide the result by those costs, and multiply by 100.</p>
+<h3>3. What is the difference between ROI and ROAS?</h3><p>ROI measures returns relative to included costs, while ROAS compares advertising-generated revenue with advertising spend.</p>
+<h3>4. Why is ROAS not enough to measure success?</h3><p>ROAS does not automatically include product costs, shipping, salaries, or other expenses. A campaign with high ROAS can still lose money.</p>
+<h3>5. Which metrics should businesses track?</h3><p>Businesses should monitor ROI, ROAS, conversion rate, CPA, CAC, and customer lifetime value.</p>
+<h3>6. How can small businesses measure advertising ROI?</h3><p>They can begin by tracking advertising spend, sales, qualified leads, conversion rates, and the costs associated with each sale.</p>
+<h3>7. How does conversion tracking improve ROI?</h3><p>It helps businesses identify which campaigns contribute to valuable actions and make better decisions about their advertising budgets.</p>
+<h3>8. How often should businesses review campaign performance?</h3><p>Performance should be monitored regularly. The review frequency depends on the campaign duration, budget, sales cycle, and available data.</p>
+<h3>9. Can a campaign with low ROI still be useful?</h3><p>Yes. A campaign may support brand awareness or attract potential customers who convert later. However, these benefits should be measured against clear objectives.</p>
+<h3>10. How can businesses improve paid advertising ROI?</h3><p>They can improve audience targeting, test ad creatives, optimize landing pages, track conversions accurately, and allocate budgets based on reliable results.</p>
+<h2>Conclusion</h2>
+<p>Paid advertising success is not just about getting clicks or reaching more people. It is about understanding how advertising contributes to business growth and profitability.</p>
+<p>By tracking ROI, ROAS, conversions, and customer acquisition costs, businesses can identify what works and make informed decisions. The goal is simple: measure meaningful results, learn from campaign data, and keep improving the return on every advertising investment.</p>
+</article>
+
+    <!-- Signature CTA -->
+    <div class="signature">
+        <div class="signature-rule"></div>
+        <div class="cta-block">
+            <h3>Ready to make smarter marketing decisions?</h3>
+            <p>Build a clearer picture of performance by tracking the metrics that connect marketing activity with business growth.</p>
+            <a href="mailto:hello@miaoon.in?subject=Marketing%20Analytics%20Inquiry" class="cta-btn">Start a Conversation</a>
+        </div>
+    </div>
+
+    <!-- Related Posts -->
+    <div class="related">
+        <p class="related-label">Continue Reading</p>
+        <div class="related-grid">
+            <a href="https://miaoon.in/blog-conversion-rate-web.html" class="related-card">
+                <span class="tag-sm">Content &amp; SEO</span>
+                <h4>Why Your SEO Strategy Is Failing</h4>
+            </a>
+            <a href="https://miaoon.in/blog-paid-ads-roi.html" class="related-card">
+                <span class="tag-sm">Paid Advertising</span>
+                <h4>Getting More Out of Every Ad Rupee You Spend</h4>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo" style="color: white;">Miaoon</div>
+            <a href="https://miaoon.in/#services">Services</a>
+            <a href="https://miaoon.in/#work">Work</a>
+            <a href="https://miaoon.in/#insights">Insights</a>
+            <a href="mailto:hello@miaoon.in">hello@miaoon.in</a>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Miaoon. Strategic Digital Agency. All rights reserved.
+        </div>
+    </footer>
+
+
+</body><mozbar-toolbar data-wxt-shadow-root=""><template shadowrootmode="open">
+<!-- saved from url=(0050)https://www.miaoon.in/blog-brand-storytelling.html -->
+<html><head><style>/* WXT Shadow Root Reset */ :host{all:initial !important;}
+:host,:host{--background: #ffffff;--foreground: #09090b;--card: #ffffff;--card-foreground: #09090b;--popover: #ffffff;--popover-foreground: #09090b;--primary: #3b82f6;--primary-foreground: #ffffff;--secondary: #f4f4f5;--secondary-foreground: #18181b;--muted: #f4f4f5;--muted-foreground: #52525b;--accent: #f4f4f5;--accent-foreground: #18181b;--destructive: #dc2626;--destructive-foreground: #ffffff;--border: #e4e4e7;--input: #e4e4e7;--ring: #a1a1aa;--radius: .5rem;--radius-xl: calc(var(--radius) + 4px);--radius-lg: var(--radius);--radius-md: calc(var(--radius) - 2px);--radius-sm: calc(var(--radius) - 4px);--chart-1: #3b82f6;--chart-2: #22c55e;--chart-3: #eab308;--chart-4: #ef4444;--chart-5: #a855f7;--sidebar: #fafafa;--sidebar-foreground: #3f3f46;--sidebar-primary: #18181b;--sidebar-primary-foreground: #fafafa;--sidebar-accent: #f4f4f5;--sidebar-accent-foreground: #18181b;--sidebar-border: #e4e4e7;--sidebar-ring: #3b82f6;--color-background: var(--background);--color-foreground: var(--foreground);--color-card: var(--card);--color-card-foreground: var(--card-foreground);--color-popover: var(--popover);--color-popover-foreground: var(--popover-foreground);--color-primary: var(--primary);--color-primary-foreground: var(--primary-foreground);--color-secondary: var(--secondary);--color-secondary-foreground: var(--secondary-foreground);--color-muted: var(--muted);--color-muted-foreground: var(--muted-foreground);--color-accent: var(--accent);--color-accent-foreground: var(--accent-foreground);--color-destructive: var(--destructive);--color-destructive-foreground: var(--destructive-foreground);--color-border: var(--border);--color-input: var(--input);--color-ring: var(--ring);--color-chart-1: var(--chart-1);--color-chart-2: var(--chart-2);--color-chart-3: var(--chart-3);--color-chart-4: var(--chart-4);--color-chart-5: var(--chart-5);--color-sidebar: var(--sidebar);--color-sidebar-foreground: var(--sidebar-foreground);--color-sidebar-primary: var(--sidebar-primary);--color-sidebar-primary-foreground: var(--sidebar-primary-foreground);--color-sidebar-accent: var(--sidebar-accent);--color-sidebar-accent-foreground: var(--sidebar-accent-foreground);--color-sidebar-border: var(--sidebar-border);--color-sidebar-ring: var(--sidebar-ring)}.dark,:host(.dark){--background: #09090b;--foreground: #fafafa;--card: #09090b;--card-foreground: #fafafa;--popover: #09090b;--popover-foreground: #fafafa;--primary: #2563eb;--primary-foreground: #ffffff;--secondary: #27272a;--secondary-foreground: #fafafa;--muted: #18181b;--muted-foreground: #d4d4d8;--accent: #18181b;--accent-foreground: #fafafa;--destructive: #dc2626;--destructive-foreground: #ffffff;--border: #27272a;--input: #27272a;--ring: #52525b;--chart-1: #3b82f6;--chart-2: #22c55e;--chart-3: #eab308;--chart-4: #ef4444;--chart-5: #a855f7;--sidebar: #18181b;--sidebar-foreground: #f4f4f5;--sidebar-primary: #3b82f6;--sidebar-primary-foreground: #ffffff;--sidebar-accent: #27272a;--sidebar-accent-foreground: #f4f4f5;--sidebar-border: #27272a;--sidebar-ring: #3b82f6;--color-background: var(--background);--color-foreground: var(--foreground);--color-card: var(--card);--color-card-foreground: var(--card-foreground);--color-popover: var(--popover);--color-popover-foreground: var(--popover-foreground);--color-primary: var(--primary);--color-primary-foreground: var(--primary-foreground);--color-secondary: var(--secondary);--color-secondary-foreground: var(--secondary-foreground);--color-muted: var(--muted);--color-muted-foreground: var(--muted-foreground);--color-accent: var(--accent);--color-accent-foreground: var(--accent-foreground);--color-destructive: var(--destructive);--color-destructive-foreground: var(--destructive-foreground);--color-border: var(--border);--color-input: var(--input);--color-ring: var(--ring);--color-chart-1: var(--chart-1);--color-chart-2: var(--chart-2);--color-chart-3: var(--chart-3);--color-chart-4: var(--chart-4);--color-chart-5: var(--chart-5);--color-sidebar: var(--sidebar);--color-sidebar-foreground: var(--sidebar-foreground);--color-sidebar-primary: var(--sidebar-primary);--color-sidebar-primary-foreground: var(--sidebar-primary-foreground);--color-sidebar-accent: var(--sidebar-accent);--color-sidebar-accent-foreground: var(--sidebar-accent-foreground);--color-sidebar-border: var(--sidebar-border);--color-sidebar-ring: var(--sidebar-ring)}.spam-low{--spam-color: #22c55e;--spam-bg: #dcfce7}.spam-medium{--spam-color: #eab308;--spam-bg: #fef9c3}.spam-high{--spam-color: #ef4444;--spam-bg: #fee2e2}.dark .spam-low,:host(.dark) .spam-low{--spam-bg: #14532d}.dark .spam-medium,:host(.dark) .spam-medium{--spam-bg: #713f12}.dark .spam-high,:host(.dark) .spam-high{--spam-bg: #7f1d1d}.mozbar-base{font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji";font-size:14px;line-height:1.5;color:var(--foreground);background-color:var(--background);box-sizing:border-box}.mozbar-base *,.mozbar-base *:before,.mozbar-base *:after{box-sizing:border-box}.mozbar-base button{font-family:inherit;font-size:inherit;line-height:inherit;cursor:pointer;border:none;background:transparent;padding:0;margin:0}.mozbar-base *:focus-visible{outline:2px solid var(--ring);outline-offset:2px;border-radius:var(--radius-sm)}#mozbar-toolbar-wrapper{font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji";font-size:14px;line-height:1.5;color:var(--foreground);box-sizing:border-box}#mozbar-toolbar-wrapper *,#mozbar-toolbar-wrapper *:before,#mozbar-toolbar-wrapper *:after{box-sizing:border-box}#mozbar-toolbar-wrapper button{font-family:inherit;font-size:inherit;line-height:inherit;cursor:pointer;border:none;background:transparent;padding:0;margin:0}</style></head><body style="color-scheme: initial; forced-color-adjust: initial; math-depth: initial; position-anchor: initial; text-size-adjust: initial; appearance: initial; color: initial; font-feature-settings: initial; font-kerning: initial; font-language-override: initial; font-optical-sizing: initial; font-palette: initial; font-size: initial; font-size-adjust: initial; font-stretch: initial; font-style: initial; font-synthesis: initial; font-variant: initial; font-variation-settings: initial; font-weight: initial; position-area: initial; text-orientation: initial; text-rendering: initial; text-spacing-trim: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; anchor-name: initial; anchor-scope: initial; animation-composition: initial; animation: initial; animation-trigger: initial; app-region: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-shape: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-decoration-break: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-animation: initial; caret-color: initial; caret-shape: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; columns: initial; column-fill: initial; gap: initial; rule-break: initial; rule: initial; rule-inset: initial; rule-visibility-items: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; corner-shape: initial; corner-block-end-shape: initial; corner-block-start-shape: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; dominant-baseline: initial; dynamic-range-limit: initial; empty-cells: initial; field-sizing: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; flex-line-count: initial; float: initial; flood-color: initial; flood-opacity: initial; frame-sizing: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; interactivity: initial; interest-delay: initial; interpolate-size: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; line-height: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-block: initial; overflow-clip-margin: initial; overflow-inline: initial; overflow-wrap: initial; overflow: initial; overlay: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-margin-safety: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position-try: initial; position-visibility: initial; print-color-adjust: initial; quotes: initial; r: initial; reading-flow: initial; reading-order: initial; resize: initial; rotate: initial; ruby-align: initial; ruby-overhang: initial; ruby-position: initial; rule-overlap: initial; rx: initial; ry: initial; scale: initial; scroll-axis-lock: initial; scroll-behavior: initial; scroll-initial-target: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-marker-group: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-target-group: initial; scroll-timeline: initial; scrollbar-color: initial; scrollbar-gutter: initial; scrollbar-width: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-autospace: initial; text-box: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-fit: initial; text-indent: initial; text-justify: initial; text-overflow: initial; text-shadow: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; text-wrap: initial; timeline-scope: initial; timeline-trigger: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; trigger-scope: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-transition-class: initial; view-transition-group: initial; view-transition-name: initial; view-transition-scope: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; white-space-collapse: initial; widows: initial; width: initial; will-change: initial; window-drag: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; display: block; position: relative; z-index: 2147483647; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif;"><div id="mozbar-toolbar-wrapper"></div></body></html></template></mozbar-toolbar></html>
